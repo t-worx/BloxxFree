@@ -1,0 +1,21 @@
+<div id="dnnSideMenu">
+	<ul>[*>NODE]</ul>
+	[>NODE]
+		<li class="menuItem[?FIRST] first[/?][?LAST] last[/?][?SELECTED] menuselected[/?] [?BREADCRUMB] menubreadcrumb[/?][?NODE] haschild[/?]">
+		[?ENABLED]
+			<a href="[=URL]"[?TARGET] target="[=TARGET]"[/?]>
+				[=TEXT]
+			</a>
+			[?NODE]<span class="collapseArrow [?BREADCRUMB][?ELSE] collapsed[/?]" data-toggle="collapse" data-target="#sidemenu[=ID]"></span>[/?]
+		[?ELSE]
+			<a class="disabled">[=TEXT]</a>
+			[?NODE]<span class="collapseArrow [?BREADCRUMB][?ELSE] collapsed[/?]" data-toggle="collapse" data-target="#sidemenu[=ID]"></span>[/?]
+		[/?]
+		[?NODE]
+			<ul id="sidemenu[=ID]" class="collapse[?BREADCRUMB] in menubreadcrumb[/?] subMenu">
+			[*>NODE]
+			</ul>
+		[/?]
+		</li>
+	[/>]
+</div>

@@ -1,0 +1,180 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+#dnnSideMenu {
+	margin:0;
+	padding:0;
+	z-index:1000;
+	* {
+		padding:0;
+		margin:0;
+	}
+	> ul {
+		padding:0;
+		margin:0;
+		list-style:none;
+		width:100%;
+		> li {
+			margin-top:4px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		ul {
+			padding:0;
+			margin:0;
+			list-style:none;
+			width:100%;
+		}
+	}
+
+	li.menuItem {
+		position:relative;
+		width:100%;
+		a {
+			line-height:20px;
+			display:block;
+			padding:15px 50px 15px 15px;
+			font-size:$size-lead;
+			color:contrast-color($main-color-1);
+			background-color:darken($main-color-1,5%);
+			font-family: $font-heading;
+			font-weight: normal;
+			text-transform: uppercase;
+			text-decoration: none;
+			&:after {
+				@include icon('\f105');
+				font-size:0.85em;
+				float:right;
+				line-height:50px;
+				width:50px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				text-align: center;
+			}
+		}
+		&.haschild a:after {
+			display:none;
+		}
+		& > a:hover,
+		&.menubreadcrumb > a {
+			color:contrast-color($main-color-1);
+			background-color:darken($main-color-1,10%);
+			text-decoration: none;
+			+ .collapseArrow {
+				color:contrast-color($main-color-1);
+			}
+		}
+	}
+
+	
+	.collapseArrow {
+		width:50px;
+		height:50px;
+		position:absolute;
+		top:0;
+		right:0;
+		cursor:pointer;
+		color:contrast-color($main-color-1);
+		&:before {
+			@include icon('\f106');
+			font-size:1em;
+			text-align:center;
+			padding:0;
+			width:50px;
+			height:50px;
+			line-height:52px;
+			display:block;
+			position:absolute;
+			top:0;
+			right:0;
+		}
+		&.collapsed:before {
+			content:'\f107';
+		}
+	}
+	.disabled + .collapseArrow {
+		width: 100%;
+	}
+
+	.subMenu {
+		li.menuItem {
+			&.last {
+				border-bottom:0;
+			}
+			a {
+				font-size: 1em;
+				font-family: $font-body;
+				text-transform: none;
+				border-top:0;
+				margin: 0;
+				position: relative;
+				padding:13px 50px 13px 15px;
+				background-color:darken($main-color-1,0%);
+			}
+			li a {
+				padding-left: 28px;
+				&:before {
+					@include icon('\f0da');
+					position: absolute;
+					z-index: 9;
+					color: inherit;
+					width: 10px;
+					display: block;
+					left: 16px;
+					top: 12px;
+				}
+			}
+			
+			li li a {
+				padding-left: (28px + $sidemenu-indent);
+				&:before {
+					left: (16px + $sidemenu-indent);
+				}
+			}
+			li li li a {
+				padding-left: (28px + $sidemenu-indent*2);
+				&:before {
+					left: (16px + $sidemenu-indent*2);
+				}
+			}
+			li li li li a {
+				padding-left: (28px + $sidemenu-indent*3);
+				&:before {
+					left: (16px + $sidemenu-indent*3);
+				}
+			}
+			li li li li li a {
+				padding-left: (28px + $sidemenu-indent*4);
+				&:before {
+					left: (16px + $sidemenu-indent*4);
+				}
+			}
+			li li li li li li a {
+				padding-left: (28px + $sidemenu-indent*5);
+				&:before {
+					left: (16px + $sidemenu-indent*5);
+				}
+			}
+			& > a:hover,
+			&.menubreadcrumb > a {
+				color:contrast-color($main-color-1);
+				background-color:darken($main-color-1,10%);
+				+ .collapseArrow {
+					color:contrast-color($main-color-1);
+				}
+			}
+		}
+		.collapseArrow {
+			width:47px;
+			height:47px;
+			&:before {
+				width:47px;
+				height:47px;
+				line-height:44px;
+			}
+		}
+	}
+
+
+}

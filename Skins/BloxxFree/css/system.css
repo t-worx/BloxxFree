@@ -1,0 +1,170 @@
+.DNNEmptyPane {
+	display: none!important;
+	width: 100%;
+}
+
+.ReactModalPortal div div div div div div div div > span {
+	font-size: 13px !important;
+	line-height: 1 !important;
+	margin-top: 5px !important;
+	height: 40px !important;
+}
+.visualizerTypeList li .text .name,
+.contentTypeList li .text .name {
+	margin: 0 !important;
+	line-height: 1.5em;
+}
+.LabelEditTextClass {
+	color: #000 !important;
+}
+.submenuEditBar.viewModesMenu {
+	color: #FFF;
+}
+
+/* CT simple rich text box fixes */
+.dnn-tabs.react-tabs ul li {
+	list-style:square;
+}
+
+/* fix module editing icons and dropdowns */
+div.actionMenu ul.dnn_mact > li {
+    line-height: 1;
+}
+div.actionMenu ul.dnn_mact > li.actionMenuMove > ul li {
+	height: 32px;
+}
+
+.dnnCheckbox .mark {
+	display: inline-block;
+	margin-top: 3px;
+	background-color: transparent;
+	padding: 0;
+}
+
+.dnnFormMessage.dnnFormInfo {
+	font-size: 15px;
+}
+
+
+/* Login modal & in page */
+.LoginPanel .dnnFormItem input[type="text"], 
+.LoginPanel .dnnFormItem input[type="email"],  
+.LoginPanel .dnnFormItem input[type="password"],
+.dnnRegistrationForm .dnnFormItem input[type="text"], 
+.dnnRegistrationForm .dnnFormItem input[type="email"],  
+.dnnRegistrationForm .dnnFormItem input[type="password"],
+.dnnSendPassword .dnnFormItem input[type="text"], 
+.dnnSendPassword .dnnFormItem input[type="email"],  
+.dnnSendPassword .dnnFormItem input[type="password"] {
+	padding:10px 8px;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	color: #707070;
+	font-size: 16px;
+}
+.dnnFormPopup {
+	max-width: 90% !important;
+}
+.dnnFormPopup #iPopUp {
+	max-width: 100%;
+}
+.dnnRegistrationForm .dnnFormMessage,
+.dnnSendPasswordContent {
+	max-width: 100%;
+}
+.LoginPanel label,
+.dnnRegistrationForm label,
+.dnnSendPassword label {
+	font-size:16px !important;
+}
+@media(max-width:767px) {
+	.LoginPanel {
+		width: auto;
+		padding: 0;
+		float: none;
+		margin: 0 auto;
+		max-width: 400px;
+	}
+	.LoginPanel .dnnFormItem .dnnLabel,
+	.LoginPanel .dnnFormItem .dnnFormLabel,
+	.dnnRegistrationForm .dnnFormItem .dnnLabel,
+	.dnnSendPassword .dnnFormItem .dnnLabel {
+		width:auto;
+		max-width: 100%;
+		float: none;
+		text-align: left;
+		margin-right: 0;
+		padding-right: 0;
+	}
+
+	.LoginPanel label:empty,
+	.dnnRegistrationForm label:empty,
+	.dnnSendPassword label:empty {
+		display: none;
+	}
+	.dnnRegistrationForm .dnnFormHelp,
+	.dnnRegistrationForm .dnnTooltip,
+	.dnnSendPassword .dnnFormHelp,
+	.dnnSendPassword .dnnTooltip {
+		display: none !important;
+	}
+	div.dnnRegistrationForm {
+		width: 100%;
+		min-width: auto;
+	}
+	div.dnnRegistrationForm .dnnForm {
+		width: 100%;
+	}
+	.LoginPanel .dnnFormItem input[type="text"], 
+	.LoginPanel .dnnFormItem input[type="email"],  
+	.LoginPanel .dnnFormItem input[type="password"],
+	.dnnRegistrationForm .dnnFormItem input[type="text"], 
+	.dnnRegistrationForm .dnnFormItem input[type="email"],  
+	.dnnRegistrationForm .dnnFormItem input[type="password"],
+	.dnnSendPassword .dnnFormItem input[type="text"], 
+	.dnnSendPassword .dnnFormItem input[type="email"],  
+	.dnnSendPassword .dnnFormItem input[type="password"] {
+		width: 100%;
+		max-width: 100%;
+	}
+	.LoginPanel .dnnPrimaryAction, 
+	.LoginPanel .dnnSecondaryAction {
+		margin-top: 15px;
+	}
+	.LoginPanel .dnnForm > div:last-child label {
+		display: none;
+	} 
+	.dnnFormPopup {
+		max-width: 100% !important;
+		width: 100% !important;
+		height: 100% !important;
+		max-height: 100% !important;
+	}
+	.dnnFormPopup .dnnModalCtrl {
+		top: 0;
+		right: 0;
+	}
+	.dnnFormPopup .ui-dialog-title {
+		padding-right: 70px;
+		display: block;
+		height: 30px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.dnnFormPopup #iPopUp {
+		height: 88% !important;
+		max-height: 88% !important;
+	}
+	.dnnFormPopup .ui-dialog-title {
+		padding-right: 70px;
+		display: block;
+	}
+}
+
+/* jsut for bloxx */
+iframe#personaBar-iframe {
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.15);
+}

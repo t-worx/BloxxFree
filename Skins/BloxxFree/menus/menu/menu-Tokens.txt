@@ -1,0 +1,37 @@
+<div id="dnnMenu">
+ <ul class="rootMenu">[*>NODE-TOP]</ul>
+</div>
+[>NODE-TOP]
+	<li class="item[?FIRST] first[/?][?LAST] last[/?][?BREADCRUMB] breadcrumb[/?][?SELECTED] selected[/?][?NODE] haschild[/?]">
+		[?ENABLED]
+			<a href="[=URL]"[?TARGET] target="[=TARGET]"[/?]><div>[=TEXT]</div></a>
+		[?ELSE]
+			<a class="disabled"><div>[=TEXT]</div></a>
+		[/?]
+		[?NODE]
+        <div class="subMenu">
+			<ul>
+				 [*>NODE]
+			</ul>
+			<div class="clearfix"></div>
+         </div>
+		[/?]
+	</li>
+[/>]
+[>NODE]
+	<li class="item[?FIRST] first[/?][?LAST] last[/?][?BREADCRUMB] breadcrumb[/?][?SELECTED] selected[/?][?NODE] haschild[/?]">
+		[?ENABLED]
+			<a href="[=URL]"[?TARGET] target="[=TARGET]"[/?]><div>[=TEXT]</div></a>
+		[?ELSE]
+			<a class="disabled"><div>[=TEXT]</div></a>
+		[/?]
+		[?NODE]
+	    <div class="subMenuRight">
+			 <ul>
+				 [*>NODE]
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		[/?]
+	</li>
+[/>]

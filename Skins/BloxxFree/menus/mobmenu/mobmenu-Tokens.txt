@@ -1,0 +1,23 @@
+<div id="dnnMenuMob">
+	<ul>[*>NODE]</ul>
+	[>NODE]
+		<li class="menuItem[?FIRST] first[/?][?LAST] last[/?][?SELECTED][/?][?BREADCRUMB] menubreadcrumb[/?] [?NODE] haschild[/?]">
+		[?ENABLED]
+			[?NODE][/?]
+			<a href="[=URL]" [?TARGET]target="[=TARGET]"[/?][?NODE] [/?]>
+				[=TEXT]
+			</a>
+		[?ELSE]
+			[?NODE]
+			<a href="#" [?NODE] [/?]>
+				[=TEXT] [/?]
+			</a>
+		[/?]
+		[?NODE]
+			<ul id="mobmenu[=ID]" class="subMenu[?BREADCRUMB] menubreadcrumb[/?]">
+			[*>NODE]
+			</ul>
+		[/?]
+		</li>
+	[/>]
+</div>

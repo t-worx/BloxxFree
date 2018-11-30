@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <template>SideMenu-Tokens.txt</template>
+  <scripts>
+    <script>SideMenu.js</script>
+  </scripts>
+  <stylesheets>
+    <stylesheet>../../css/SideMenu.css</stylesheet>
+  </stylesheets>
+</manifest>

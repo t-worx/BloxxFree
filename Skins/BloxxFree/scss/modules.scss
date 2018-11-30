@@ -1,0 +1,14 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+
+.BloxxTheme {
+	.urlControl input[type=checkbox],
+	.urlControl input[type=radio] {
+		width: 20px;
+	}
+	/* search results */
+	.dnnSearchResultAdvancedTip {
+		font-size: $size-small;
+	}
+}

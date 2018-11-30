@@ -1,0 +1,47 @@
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Color Contrast
+// LINEAR to LOGARITHMIC and vicev-ersa
+@function re-gamma($n) { @if $n <= 0.0031308 { @return $n * 12.92; } @else { @return 1.055 * pow($n,1/2.4) - 0.055; } }
+
+@function de-gamma($n) { @if $n <= 0.04045 { @return $n / 12.92; } @else { @return pow((($n + 0.055)/1.055),2.4); } }
+
+// sRGB BT-709 BRIGHTNESS
+@function brightness($c) {
+	$rlin: de-gamma(red($c)/255);
+	$glin: de-gamma(green($c)/255);
+	$blin: de-gamma(blue($c)/255);
+	@return re-gamma(0.2126 * $rlin + 0.7152 * $glin + 0.0722 * $blin) * 100;
+}
+
+// Compares contrast of a given color to the light/dark arguments and returns whichever is most "contrasty"
+@function contrast-color($color, $dark: #303030, $light: #FFFFFF) { /* $dark tweaked to match theme */
+	@if $color == null {
+		@return null;
+	}
+  
+	@else {
+		$color-brightness: brightness($color);
+		$light-text-brightness: brightness($light);
+		$dark-text-brightness: brightness($dark);
+
+		@return if(abs($color-brightness - $light-text-brightness) > abs($color-brightness - $dark-text-brightness - 30), $light, $dark);
+		/* - 20 added to bias the dark/light breakpoint */
+	}
+}

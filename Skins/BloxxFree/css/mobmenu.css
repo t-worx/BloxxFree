@@ -1,0 +1,75 @@
+#dnnMenuMob {
+  margin: 0;
+  padding: 2.8em 4px 0;
+  z-index: 1000;
+  /* breadcrumbs */
+}
+#dnnMenuMob * {
+  padding: 0;
+  margin: 0;
+}
+#dnnMenuMob > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+#dnnMenuMob > ul > li {
+  margin-top: 4px;
+}
+#dnnMenuMob li.menuItem {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+#dnnMenuMob li.menuItem a {
+  line-height: 20px;
+  display: block;
+  padding: 15px;
+  margin: 0;
+  font-size: 1.35em;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #285f8f;
+}
+#dnnMenuMob li.menuItem a:hover,
+#dnnMenuMob li.menuItem.menubreadcrumb > a {
+  color: #FFFFFF;
+  background: #22527b;
+}
+#dnnMenuMob .subMenu {
+  margin: 0;
+}
+#dnnMenuMob .subMenu li.menuItem a {
+  /* 2nd Level */
+  font-size: 16px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: normal;
+  color: #FFFFFF;
+  background: #337AB7;
+  padding: 15px;
+  margin: 0;
+  border: 0;
+}
+#dnnMenuMob .subMenu li.menuItem a:hover {
+  color: #FFFFFF;
+  background: #285f8f;
+}
+#dnnMenuMob .subMenu li.menuItem.menubreadcrumb > a {
+  color: #FFFFFF;
+}
+#dnnMenuMob .subMenu li.menuItem li a {
+  /* 3rd Level */
+  padding: 10px 0 10px 40px;
+}
+#dnnMenuMob .subMenu li.menuItem li li a {
+  /* 4th Level */
+  padding: 10px 0 10px 60px;
+}
+#dnnMenuMob .subMenu li.menuItem li li li a {
+  /* 5th Level */
+  padding: 10px 0 10px 80px;
+}

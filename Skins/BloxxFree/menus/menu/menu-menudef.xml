@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <template>menu-Tokens.txt</template>
+  <scripts>
+    <script>menu.js</script>
+  </scripts>
+  <stylesheets>
+    <stylesheet>../../css/menu.css</stylesheet>
+  </stylesheets>
+</manifest>

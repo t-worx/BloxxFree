@@ -1,0 +1,126 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+/* Containers */
+
+/* Titles */
+.TitleWidth {
+	margin:0;
+	padding:0;
+	.siteWidth > & {
+		margin: 0 -5px;
+	}
+}
+.TitleTitle {
+	padding:0;
+	h1,
+	h2,
+	h3 {
+		color: $main-color-1;
+		font-weight: normal;
+		text-transform: uppercase;
+		margin: 0 0 0.5em;
+		.footerMain &,
+		footer & {
+			color:contrast-color($footer-background);
+		}
+	}
+	.boxMe & {
+		h1,h2,h3 {
+			display: block;
+			margin: -20px -20px 20px;
+			padding: 0.5em 15px;
+			position: relative;
+			color:contrast-color($main-color-1);
+			background:$main-color-1;
+			.footerMain &,
+			footer & {
+				margin: 0 0 0.5em;
+				padding: 0;
+				background: none;
+			}
+			&.heading-icon {
+				padding-left:2.6em;
+			}
+			.fa {
+				float: left;
+				color:#FFF;
+				&:before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					width:1.75em;
+					font-size:1.2em;
+					text-align: center;
+					padding:0.4em 0;
+					color: #FFF;
+					background:shade(darken($main-color-1,8%),15%);
+					line-height: 1.15;
+				}
+			}
+		}
+	}
+}
+
+
+.TitleContentpane {
+	vertical-align: top;
+	padding:0;
+	clear:both;
+}
+.TitleIcon {
+	float:left;
+	img {
+		margin:0 8px 0 0;
+	}
+}
+
+/* boxed layout */
+.boxMe {
+	background: $white;
+	padding: 20px;
+	.footerMain &,
+	footer & {
+		background: none;
+		padding: 0;
+	}
+	.unPadMe {
+		margin: -20px;
+		font-size: 0;
+		iframe {
+			border: 4px solid $white;
+		}
+	}
+}
+
+
+
+
+/* Container Paddings */
+.padThis {
+	padding:0 $h-pad $v-pad;
+	.heroMain .DnnModule:first-child & {
+		padding:$v-pad $h-pad 0;
+	}
+	#dnn_FooterSocialPane & {
+		padding-bottom: 0;
+	}
+	.siteWidth &.TitleWidth {
+		margin: 0;
+	}
+}
+.noSidesPad {
+	padding-left:0 !important;
+	padding-right:0 !important;
+}
+.noBottomPad {
+	padding-bottom:0 !important;
+}
+.noTopPad {
+	padding-top:0 !important;
+}
+.noPad {
+	padding:0 !important;
+	min-height: 0;
+}

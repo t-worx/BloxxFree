@@ -1,0 +1,176 @@
+#dnnMenu {
+  margin: 0;
+  padding: 0;
+}
+#dnnMenu * {
+  padding: 0;
+  margin: 0;
+}
+#dnnMenu li a * {
+  text-decoration: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+#dnnMenu li a div * {
+  text-decoration: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+#dnnMenu ul ul {
+  border-top: none;
+  z-index: 9999;
+}
+#dnnMenu .rootMenu {
+  text-align: right;
+  position: relative;
+  z-index: 903;
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  display: inline-block;
+}
+#dnnMenu .rootMenu li {
+  float: left;
+  margin: 0 2px;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  background: none;
+  text-align: left;
+}
+#dnnMenu .rootMenu li a {
+  display: block;
+  background: none;
+  text-decoration: none;
+}
+#dnnMenu .rootMenu li a:hover {
+  background: none;
+  text-decoration: none;
+}
+#dnnMenu .rootMenu li a:hover div {
+  background: none;
+}
+#dnnMenu .rootMenu li a div {
+  display: block;
+  background: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25em;
+  padding: 15px 12px;
+}
+#dnnMenu .rootMenu li.rmhover > a, #dnnMenu .rootMenu li:hover > a {
+  text-decoration: none;
+}
+#dnnMenu .rootMenu li.rmhover > a > div, #dnnMenu .rootMenu li.rmhover > a:hover > div, #dnnMenu .rootMenu li:hover > a > div, #dnnMenu .rootMenu li:hover > a:hover > div {
+  color: #FFFFFF;
+  background: #2d6da3;
+}
+#dnnMenu .rootMenu li.selected > a, #dnnMenu .rootMenu li.breadcrumb > a {
+  text-decoration: none;
+}
+#dnnMenu .rootMenu li.selected > a > div, #dnnMenu .rootMenu li.selected > a:hover > div, #dnnMenu .rootMenu li.breadcrumb > a > div, #dnnMenu .rootMenu li.breadcrumb > a:hover > div {
+  color: #FFFFFF;
+  background: #285f8f;
+}
+#dnnMenu .rootMenu li.hover .subMenu {
+  display: block;
+  white-space: nowrap;
+}
+#dnnMenu .rootMenu > li {
+  float: none;
+  display: inline-block;
+}
+#dnnMenu .rootMenu > li.haschild > a > div:after {
+  content: '\f107';
+  font-family: "FontAwesome";
+  margin-left: 6px;
+  position: relative;
+}
+#dnnMenu .subMenu {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  z-index: 9999;
+  width: 180px;
+  min-width: 100%;
+}
+#dnnMenu .subMenu ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1200;
+}
+#dnnMenu .subMenu ul ul {
+  margin: 0 0 0 2px;
+}
+#dnnMenu .subMenu li {
+  float: none;
+  clear: both;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#dnnMenu .subMenu li.item a {
+  border: none;
+  background: none;
+}
+#dnnMenu .subMenu li.item a div {
+  display: block;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25em;
+  padding: 10px 12px;
+  background: #2d6da3;
+}
+#dnnMenu .subMenu li.item a:hover div {
+  color: #FFFFFF;
+  background: #285f8f;
+}
+#dnnMenu .subMenu li.item.rmhover > a > div, #dnnMenu .subMenu li.item.breadcrumb > a > div {
+  color: #FFFFFF;
+  background: #285f8f;
+}
+#dnnMenu .subMenu li.selected > a > div,
+#dnnMenu .subMenu li.selected > a:hover > div, #dnnMenu .subMenu li.selected.rmhover > a > div, #dnnMenu .subMenu li.breadcrumb > a > div,
+#dnnMenu .subMenu li.breadcrumb > a:hover > div, #dnnMenu .subMenu li.breadcrumb.rmhover > a > div {
+  background: #285f8f;
+}
+#dnnMenu .subMenu li a * {
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#dnnMenu .subMenu li.haschild > a > div:after {
+  content: '\f105';
+  display: block;
+  float: right;
+  text-decoration: inherit;
+  font-family: "FontAwesome";
+}
+#dnnMenu .subMenu li.first > a {
+  border-top: none;
+}
+#dnnMenu .subMenu > li.hover > .subMenuRight {
+  display: none;
+}
+#dnnMenu .subMenuRight {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+  min-width: 190px;
+  border: 0;
+}

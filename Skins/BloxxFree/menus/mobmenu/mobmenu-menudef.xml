@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <template>mobmenu-Tokens.txt</template>
+  <scripts>
+    <script>mobmenu.js</script>
+  </scripts>
+  <stylesheets>
+    <stylesheet>../../css/mobmenu.css</stylesheet>
+  </stylesheets>
+</manifest>

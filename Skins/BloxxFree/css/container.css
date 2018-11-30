@@ -1,0 +1,123 @@
+/* Containers */
+/* Titles */
+.TitleWidth {
+  margin: 0;
+  padding: 0;
+}
+.siteWidth > .TitleWidth {
+  margin: 0 -5px;
+}
+
+.TitleTitle {
+  padding: 0;
+}
+.TitleTitle h1,
+.TitleTitle h2,
+.TitleTitle h3 {
+  color: #337AB7;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 0.5em;
+}
+.footerMain .TitleTitle h1, footer .TitleTitle h1, .footerMain
+.TitleTitle h2, footer
+.TitleTitle h2, .footerMain
+.TitleTitle h3, footer
+.TitleTitle h3 {
+  color: #FFFFFF;
+}
+.boxMe .TitleTitle h1, .boxMe .TitleTitle h2, .boxMe .TitleTitle h3 {
+  display: block;
+  margin: -20px -20px 20px;
+  padding: 0.5em 15px;
+  position: relative;
+  color: #FFFFFF;
+  background: #337AB7;
+}
+.footerMain .boxMe .TitleTitle h1, footer .boxMe .TitleTitle h1, .footerMain .boxMe .TitleTitle h2, footer .boxMe .TitleTitle h2, .footerMain .boxMe .TitleTitle h3, footer .boxMe .TitleTitle h3 {
+  margin: 0 0 0.5em;
+  padding: 0;
+  background: none;
+}
+.boxMe .TitleTitle h1.heading-icon, .boxMe .TitleTitle h2.heading-icon, .boxMe .TitleTitle h3.heading-icon {
+  padding-left: 2.6em;
+}
+.boxMe .TitleTitle h1 .fa, .boxMe .TitleTitle h2 .fa, .boxMe .TitleTitle h3 .fa {
+  float: left;
+  color: #FFF;
+}
+.boxMe .TitleTitle h1 .fa:before, .boxMe .TitleTitle h2 .fa:before, .boxMe .TitleTitle h3 .fa:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1.75em;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.4em 0;
+  color: #FFF;
+  background: #245680;
+  line-height: 1.15;
+}
+
+.TitleContentpane {
+  vertical-align: top;
+  padding: 0;
+  clear: both;
+}
+
+.TitleIcon {
+  float: left;
+}
+.TitleIcon img {
+  margin: 0 8px 0 0;
+}
+
+/* boxed layout */
+.boxMe {
+  background: #FFF;
+  padding: 20px;
+}
+.footerMain .boxMe, footer .boxMe {
+  background: none;
+  padding: 0;
+}
+.boxMe .unPadMe {
+  margin: -20px;
+  font-size: 0;
+}
+.boxMe .unPadMe iframe {
+  border: 4px solid #FFF;
+}
+
+/* Container Paddings */
+.padThis {
+  padding: 0 15px 30px;
+}
+.heroMain .DnnModule:first-child .padThis {
+  padding: 30px 15px 0;
+}
+#dnn_FooterSocialPane .padThis {
+  padding-bottom: 0;
+}
+.siteWidth .padThis.TitleWidth {
+  margin: 0;
+}
+
+.noSidesPad {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.noBottomPad {
+  padding-bottom: 0 !important;
+}
+
+.noTopPad {
+  padding-top: 0 !important;
+}
+
+.noPad {
+  padding: 0 !important;
+  min-height: 0;
+}

@@ -1,0 +1,10 @@
+.BloxxTheme {
+  /* search results */
+}
+.BloxxTheme .urlControl input[type=checkbox],
+.BloxxTheme .urlControl input[type=radio] {
+  width: 20px;
+}
+.BloxxTheme .dnnSearchResultAdvancedTip {
+  font-size: 0.85em;
+}

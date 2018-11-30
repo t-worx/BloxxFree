@@ -1,0 +1,83 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+#dnnMenuMob {
+	margin:0;
+	padding:2.8em 4px 0;
+	z-index:1000;
+	* {
+		padding:0;
+		margin:0;
+	}
+	> ul {
+		padding:0;
+		margin:0;
+		list-style:none;
+		width:100%;
+		> li {
+			margin-top: 4px;
+		}
+	}
+	li.menuItem {
+		position:relative;
+		width:100%;
+		list-style:none;
+	}
+	li.menuItem a {
+		line-height:20px;
+		display:block;
+		padding: 15px;
+		margin: 0;
+		font-size:$size-h5;
+		font-family: $font-heading;
+		font-weight: normal;
+		text-transform: uppercase;
+		color:contrast-color($main-color-1);
+		background:darken($main-color-1,10%);
+		&:first-child a {}
+	}
+	li.menuItem a:hover,
+	li.menuItem.menubreadcrumb > a {
+		color:contrast-color($main-color-1);
+		background:darken($main-color-1,15%);
+	}
+
+	.subMenu {
+		margin: 0;
+		li.menuItem {
+
+			& a {/* 2nd Level */
+				font-size:$size-body;
+				font-family: $font-body;
+				font-weight: normal;
+				text-transform: normal;
+				color:contrast-color($main-color-1);
+				background:$main-color-1;
+				padding:15px;
+				margin: 0;
+				border:0;
+				&:hover {
+					color:contrast-color($main-color-1);
+					background:darken($main-color-1,10%);
+				}
+			}
+			&.menubreadcrumb > a {
+				color:contrast-color($main-color-1);
+			}
+			& li a {/* 3rd Level */
+				padding:10px 0 10px 40px;
+			}
+			& li li a {/* 4th Level */
+				padding:10px 0 10px 60px;
+			}
+			& li li li a {/* 5th Level */
+				padding:10px 0 10px 80px;
+			}
+
+		}
+	}
+
+	/* breadcrumbs */
+	.menuItem.in.haschild > a {}
+
+}
