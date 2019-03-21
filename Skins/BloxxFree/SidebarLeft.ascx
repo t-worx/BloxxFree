@@ -23,7 +23,7 @@
 <script src="<%= SkinPath %>js/smoothscroll.min.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="<%= SkinPath %>js/common.js" type="text/javascript"></script>
-<!-- Bloxx Free Theme by T-WORX | Sidebar Left | 01.00.00 -->
+<!-- Bloxx Free Theme by T-WORX | Sidebar Left | 01.00.01 -->
 <div id="mobileMenu" class="collapse mobileMenuMain"> <a class="menuClose" data-toggle="collapse" data-target="#mobileMenu">×</a>
 	<dnn:MENU MenuStyle="menus/mobmenu" runat="server"></dnn:MENU>
 </div>
