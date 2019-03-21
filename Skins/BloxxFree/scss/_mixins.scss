@@ -226,6 +226,13 @@
 	}
 	align-items: $align-items;
 }
+
+@mixin justify-items ($flex:flex-start) {
+    -webkit-align-self: $flex;
+	-ms-flex-item-align: $flex;
+    align-self: $flex;	
+}
+
 @mixin flex-child ($flex:1 0 auto) {
 	-webkit-order: 0;
 	-ms-flex-order: 0;
@@ -238,6 +245,17 @@
     align-self: auto;	
 }
 
+@mixin flex-child-align-self ($flex:flex-start) {
+    -webkit-align-self: $flex;
+	-ms-flex-item-align: $flex;
+    align-self: $flex;	
+}
+
+@mixin flex-justify-content-space-between {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
 
 //Buttons
 @mixin button-base {

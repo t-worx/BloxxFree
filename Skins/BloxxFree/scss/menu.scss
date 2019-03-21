@@ -38,8 +38,6 @@
 			position: relative;
 			background: none;
 			text-align: left;
-			&.last {
-			}
 			a {
 				display: block;
 				background: none;
@@ -89,6 +87,9 @@
 		> li {
 			float: none;
 			display: inline-block;
+			&.last {
+				margin: 0 0 0 2px;
+			}
 			&.haschild > a > div:after {
 				content: '\f107';
 				font-family: $font-awesome;
