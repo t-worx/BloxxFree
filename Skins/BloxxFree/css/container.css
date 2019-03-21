@@ -3,6 +3,7 @@
 .TitleWidth {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .siteWidth > .TitleWidth {
   margin: 0 -5px;

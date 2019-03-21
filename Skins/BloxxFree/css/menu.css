@@ -85,6 +85,9 @@
   float: none;
   display: inline-block;
 }
+#dnnMenu .rootMenu > li.last {
+  margin: 0 0 0 2px;
+}
 #dnnMenu .rootMenu > li.haschild > a > div:after {
   content: '\f107';
   font-family: "FontAwesome";
